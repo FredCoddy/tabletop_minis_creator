@@ -166,7 +166,7 @@ $(window).on('wheel', function(e){
     
     
 
-        render_noRotate()
+        render_rotate()
         // requestAnimationFrame(render_noRotate);
         // controls.update();
         renderer.render(scene, camera);
