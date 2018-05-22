@@ -1,0 +1,13 @@
+{
+  "name": "threejs",
+  "version": "1.0.0",
+  "description": "3D vizualisation figurines",
+  "main": "index.js",
+  "author": "Frédéric JUNG Coddy33",
+  "license": "MIT",
+  "dependencies": {
+    "metro": "^0.36.1",
+    "three": "^0.92.0",
+    "three.js": "^0.77.1"
+  }
+}
