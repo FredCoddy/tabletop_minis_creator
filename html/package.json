@@ -1,0 +1,20 @@
+{
+  "name": "threejs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^4.1.1",
+    "jquery": "^3.3.1",
+    "metro4": "latest",
+    "metro4-dist": "latest",
+    "three": "^0.92.0",
+    "three.js": "^0.77.1"
+  },
+  "description": "figurine maker",
+  "repository": {
+    "url": "https://github.com/FredCoddy/figurineMaker_forgistic",
+    "type": "git"
+  },
+  "author": "coddy33 <nanouwow@hotmail.fr>"
+}

@@ -1,0 +1,23 @@
+body{
+    margin: 0;
+    overflow: hidden;
+}
+
+#canvas{
+    position:absolute;
+    background: red;
+    width : 1000px;
+    height: 500px;
+    margin-left: 10%;
+    /* margin-right: auto; */
+    display: block;
+}
+
+/* #menu{
+    margin-top: 50px;
+} */
+
+.menu_icons{
+    transform: scale(0.7, 0.7);
+}
+
