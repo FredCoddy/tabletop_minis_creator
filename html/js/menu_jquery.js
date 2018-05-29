@@ -18,28 +18,48 @@ console.log("script Jquery : OK")
 
 /* Menu jQuery */
 
-$(window).on('wheel', function(e){
-    /** 
-     * Bind wheel mouse events for zoom and dezoom
-     * Need to specify the max and min scale 
-     *  
-     * Increase or decrease the $scale of the object by $step
-     * 
-     * Need zoom()
-     */
-    var step = 0.05;
-    var max_scale = 1.6;
-    var min_scale = 0.5;
-    var delta = e.originalEvent.deltaY;
-    if(delta > 0 && scale > 0.5){ // Down
-        scale-=step;
-        zoom(scale);
-    }
-    else if(scale < max_scale){ // UP
-        scale+=step;
-        zoom(scale);
-    }
-})
+$("#scale1").click(function(){
+    console.log("scale1");
+    define_scale(1);
+});
+
+
+$("#scale075").click(function(){
+    console.log("scale075");
+    define_scale(0.75);
+});
+
+
+$("#scale050").click(function(){
+    define_scale(0.50);
+});
+
+function define_scale(scale_level){
+    zoom(scale_level);
+}
+
+// $(window).on('wheel', function(e){
+//     /** 
+//      * Bind wheel mouse events for zoom and dezoom
+//      * Need to specify the max and min scale 
+//      *  
+//      * Increase or decrease the $scale of the object by $step
+//      * 
+//      * Need zoom()
+//      */
+//     var step = 0.05;
+//     var max_scale = 1.6;
+//     var min_scale = 0.5;
+//     var delta = e.originalEvent.deltaY;
+//     if(delta > 0 && scale > 0.5){ // Down
+//         scale-=step;
+//         zoom(scale);
+//     }
+//     else if(scale < max_scale){ // UP
+//         scale+=step;
+//         zoom(scale);
+//     }
+// })
 
 $("#shark_button").click(function() {
     /**
