@@ -21,14 +21,13 @@
     </head>
     <body>
 
-
             <?php
             // ======= MAIN ========
             
             $file_name=$_FILES['fichier']['name'];
             $Max_size = 20000000000; // size in byte  || 1 byte = 1.10^-9 Go
             $file = basename($_FILES['fichier']['name']);
-            $upload_directory = '/var/www/html/uploads/'.$_FILES['fichier']['name']; // chemin vers le nouveau répertoire de stockage
+            $upload_directory = '/var/www/'.$_FILES['fichier']['name']; // chemin vers le nouveau répertoire de stockage
             $tmp_dir = $_FILES['fichier']['tmp_name'];  
             $format = array('.stl', '.obj', '.step','.png','.jpeg');
             $extension = strrchr($_FILES['fichier']['name'],'.');
